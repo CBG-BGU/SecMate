@@ -1,0 +1,76 @@
+/* General body styling */
+
+
+/* Amplify Authenticator container styling */
+.amplify-authenticator {
+  background-color: rgba(33, 32, 32, 0.9); /* Dark background for the login box */
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+/* Input field styling */
+.amplify-input {
+  font-size: 1.2rem; /* Larger font size */
+  padding: 12px; /* Padding for inputs */
+  border-radius: 5px; /* Rounded input edges */
+  border: 1px solid #ccc; /* Light border */
+  margin-bottom: 20px; /* Space between inputs */
+  width: 100%;
+}
+
+/* Button styling */
+.amplify-button {
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 100%; /* Full-width button */
+  text-align: center;
+}
+
+/* Button hover effect */
+.amplify-button:hover {
+  background-color: #0056b3; /* Darken on hover */
+}
+
+/* Amplify form header styling */
+.amplify-heading {
+  font-size: 2rem; /* Larger heading font */
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Link styling */
+.amplify-link {
+  color: #007bff; /* Match your button color */
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.amplify-link:hover {
+  text-decoration: underline;
+}
+
+/* Checkbox and label styling */
+.amplify-checkbox {
+  margin-right: 10px;
+}
+
+.amplify-label {
+  font-size: 1.2rem; /* Adjust label size */
+}
+
+/* Centered logo */
+.security-advisor-image {
+  width: 100%;
+  max-width: 200px; /* Adjust logo size */
+  margin: 0 auto 20px;
+  display: block;
+}

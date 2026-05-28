@@ -1,0 +1,376 @@
+.loading-prompt .txt p {
+  color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.904) 50%,
+    transparent 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shineText 5s infinite linear;
+  background-size: 200% 100%;
+  background-position: 200% center;
+}
+
+@keyframes shineText {
+  to {
+    background-position: -200% center;
+  }
+}
+.loading-prompt .txt p {
+  -webkit-text-fill-color: transparent;
+}
+
+/* Structured Response Styles */
+.structured-response {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Recommendation Section */
+.recommendation-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px 0;
+  border-left: 4px solid #4CAF50;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  animation: slideInRecommendation 0.5s ease-out;
+}
+
+@keyframes slideInRecommendation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recommendation-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.recommendation-header h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.recommendation-icon {
+  color: #4CAF50;
+  flex-shrink: 0;
+}
+
+.product-highlight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.product-highlight strong {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.recommendation-description {
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Diagnosis Section */
+.diagnosis-section {
+  background: rgba(255, 193, 7, 0.1);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+}
+
+.diagnosis-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.diagnosis-icon {
+  color: #ffc107;
+  flex-shrink: 0;
+}
+
+.diagnosis-text {
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Step Navigation Container */
+.step-navigation-container {
+  background: rgba(33, 37, 41, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px 0;
+  backdrop-filter: blur(10px);
+}
+
+/* Step Header */
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.step-counter {
+  color: #4CAF50;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Progress Bar */
+.step-progress-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+  margin: 0 16px;
+  overflow: hidden;
+}
+
+.step-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Current Step */
+.current-step {
+  margin-bottom: 16px;
+}
+
+.step-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 3px solid #4CAF50;
+}
+
+.step-text {
+  flex: 1;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.step-text strong {
+  color: #4CAF50;
+}
+
+/* Step Complete Button */
+.step-complete-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.step-complete-btn:hover {
+  background: rgba(76, 175, 80, 0.3);
+  border-color: #4CAF50;
+}
+
+.step-complete-btn.completed {
+  background: rgba(76, 175, 80, 0.8);
+  color: #ffffff;
+  border-color: #4CAF50;
+}
+
+/* Navigation Buttons */
+.step-navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.step-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.step-nav-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.step-nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.step-nav-btn.next {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  border-color: #4CAF50;
+}
+
+.step-nav-btn.next:hover {
+  background: linear-gradient(135deg, #45a049, #3d8b40);
+}
+
+/* Completion Section */
+.completion-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-recommendation-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.show-recommendation-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+/* Steps Overview */
+.steps-overview {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.step-indicator {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.step-indicator:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+.step-indicator.current {
+  background: #4CAF50;
+  color: #ffffff;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+}
+
+.step-indicator.completed {
+  background: rgba(76, 175, 80, 0.8);
+  color: #ffffff;
+  border-color: #4CAF50;
+}
+
+.step-indicator.completed.current {
+  background: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+}
+
+/* Other Content */
+.other-content {
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.other-content p {
+  margin: 8px 0;
+}
+
+.other-content h1,
+.other-content h2,
+.other-content h3,
+.other-content h4,
+.other-content h5,
+.other-content h6 {
+  color: #4CAF50;
+  margin: 16px 0 8px 0;
+}
+
+.other-content code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.other-content pre {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.steps-completed-message {
+  color: #4CAF50;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 8px 16px;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 6px;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}

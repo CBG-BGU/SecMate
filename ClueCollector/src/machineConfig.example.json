@@ -1,0 +1,26 @@
+{
+  "configs": {
+    "a": {
+      "name": "CC + Adaptation",
+      "instances": [
+        {
+          "id": "example-agent",
+          "public_ip": "localhost",
+          "port": 8765,
+          "status": "running"
+        }
+      ]
+    },
+    "b": {
+      "name": "CC Only",
+      "instances": [
+        {
+          "id": "example-agent-cc-only",
+          "public_ip": "localhost",
+          "port": 8765,
+          "status": "running"
+        }
+      ]
+    }
+  }
+}

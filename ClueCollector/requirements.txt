@@ -1,0 +1,11 @@
+python-dotenv==1.0.1
+websockets==12.0
+boto3>=1.34,<2
+psutil==5.9.8
+GPUtil==1.4.0
+
+# Windows host-inspection dependencies used by DataCollector.py.
+pywin32==306; platform_system == "Windows"
+WMI==1.5.1; platform_system == "Windows"
+pywifi==1.1.12; platform_system == "Windows"
+comtypes>=1.4,<2; platform_system == "Windows"

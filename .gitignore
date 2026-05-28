@@ -1,0 +1,50 @@
+# Environment and secrets
+.env
+.env.*
+!**/.env.example
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+wheels/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs and local runtime outputs
+*.log
+server_concurrency.log
+*.sqlite
+*.sqlite3
+
+# Node / React
+node_modules/
+web_ui/build/
+web_ui/.cache/
+
+# Editors and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Local notebooks and scratch outputs
+.ipynb_checkpoints/
+scratch/
+tmp/
+temp/

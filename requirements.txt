@@ -1,0 +1,9 @@
+# Convenience installer for the full clean-release pipeline.
+#
+# For development, prefer installing each module's requirements in its own
+# environment. ClueCollector includes Windows-specific packages because it
+# collects Windows host information.
+
+-r Server/requirements.txt
+-r agent_service/requirements.txt
+-r ClueCollector/requirements.txt

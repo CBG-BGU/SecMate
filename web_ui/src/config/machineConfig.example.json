@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "description": "Placeholder experiment-machine configuration for the release UI.",
+    "total_instances": 10,
+    "deployment_note": "Replace api_base_url values with your own agent-service endpoints."
+  },
+  "configs": {
+    "a": {
+      "name": "ClueCollector + Adaptation",
+      "description": "Agent condition with ClueCollector context and personalized adaptation.",
+      "instances": [
+        {
+          "id": "a1",
+          "name": "condition-a-primary",
+          "api_base_url": "http://localhost:5001"
+        },
+        {
+          "id": "a2",
+          "name": "condition-a-backup",
+          "api_base_url": "http://localhost:5002"
+        }
+      ]
+    },
+    "b": {
+      "name": "ClueCollector Only",
+      "description": "Agent condition with ClueCollector context and no personalized adaptation.",
+      "instances": [
+        {
+          "id": "b1",
+          "name": "condition-b-primary",
+          "api_base_url": "http://localhost:5003"
+        },
+        {
+          "id": "b2",
+          "name": "condition-b-backup",
+          "api_base_url": "http://localhost:5004"
+        }
+      ]
+    },
+    "c": {
+      "name": "Adaptation Only",
+      "description": "Agent condition with personalized adaptation and no ClueCollector context.",
+      "instances": [
+        {
+          "id": "c1",
+          "name": "condition-c-primary",
+          "api_base_url": "http://localhost:5005"
+        },
+        {
+          "id": "c2",
+          "name": "condition-c-backup",
+          "api_base_url": "http://localhost:5006"
+        }
+      ]
+    },
+    "d": {
+      "name": "No ClueCollector / No Adaptation",
+      "description": "Baseline condition.",
+      "instances": [
+        {
+          "id": "d1",
+          "name": "condition-d-primary",
+          "api_base_url": "http://localhost:5000"
+        },
+        {
+          "id": "d2",
+          "name": "condition-d-backup",
+          "api_base_url": "http://localhost:5007"
+        }
+      ]
+    },
+    "e": {
+      "name": "Raw Model",
+      "description": "Raw model condition.",
+      "instances": [
+        {
+          "id": "e1",
+          "name": "condition-e-primary",
+          "api_base_url": "http://localhost:5008"
+        },
+        {
+          "id": "e2",
+          "name": "condition-e-backup",
+          "api_base_url": "http://localhost:5009"
+        }
+      ]
+    }
+  }
+}
